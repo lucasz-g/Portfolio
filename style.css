@@ -1,0 +1,81 @@
+* {
+    background-color: black;
+}
+
+h1 {
+    display: flex;
+    justify-content: space-around;
+
+    font-family: 'DM Sans', sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+
+    color: white;
+}
+
+nav#nav-bar{
+    display: flex;
+    justify-content: space-between;
+
+    padding: 1rem;
+}
+
+ul#nav-list {
+    display: flex;
+    flex-direction: row;
+
+    gap: 2rem;
+    list-style: none;
+
+    font-family: 'DM Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+}
+
+section#main-text-button{
+    display: flex;
+    padding: 2rem;
+
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+div#introduction-text{
+    font-family: 'DM Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+}
+
+p#description-text {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #333333;
+}
+
+div#buttons{
+    display: flex;
+    gap: 1rem;
+}
+
+button#download { 
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    border: none;
+    background-color: #00DF5E;
+    padding: 1rem; 
+}
+
+button#contato{
+    color: white;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+
+    border:1px solid; 
+    border-color: #333333;
+    padding: 1rem;
+}
