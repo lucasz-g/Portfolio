@@ -1,5 +1,8 @@
 * {
     background-color: black;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 h1 {
@@ -35,9 +38,8 @@ ul#nav-list {
 
 section#main-text-button{
     display: flex;
-    padding: 2rem;
 
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-around;
 }
 
@@ -46,6 +48,10 @@ div#introduction-text{
     font-size: 18px;
     font-weight: 400;
     color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 p#description-text {
@@ -53,6 +59,10 @@ p#description-text {
     font-size: 18px;
     font-weight: 400;
     color: #333333;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 div#buttons{
@@ -78,4 +88,8 @@ button#contato{
     border:1px solid; 
     border-color: #333333;
     padding: 1rem;
+}
+
+img#main-banner {
+    width: 20rem;
 }
