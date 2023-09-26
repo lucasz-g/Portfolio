@@ -73,6 +73,13 @@ button#download {
     padding: 1rem 3rem 1rem 3rem; 
 }
 
+button#download:hover {
+    cursor: pointer;
+    background-color:#1ee06f;  
+    border-color: white;
+    color: white;
+}
+
 button#contato{
     color: white;
     font-family: 'DM Sans', sans-serif;
@@ -82,6 +89,12 @@ button#contato{
     border:1px solid; 
     border-color: #333333;
     padding: 1rem 3rem 1rem 3rem; 
+}
+
+button#contato:hover{
+    cursor: pointer;
+    background-color:#1f1e1e; 
+    border-color: #00DF5E;
 }
 
 div#main-banner {
