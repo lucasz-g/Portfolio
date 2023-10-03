@@ -34,14 +34,19 @@ ul#nav-list {
     font-size: 18px;
     font-weight: 400;
     color: white;
+    text-decoration: none;
+}
+
+.link-nav{
+    color: white;
+    text-decoration: none;
 }
 
 section#main-text-button{
     display: flex;
-    flex-direction: column;
     justify-content: space-around;
 
-    padding: 4rem;
+    padding: 2rem;
 }
 
 div#introduction-text{
