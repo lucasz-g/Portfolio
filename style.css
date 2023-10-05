@@ -42,6 +42,10 @@ ul#nav-list {
     text-decoration: none;
 }
 
+.link-nav:hover{
+    color: #00ffff;
+}
+
 section#main-text-button{
     display: flex;
     justify-content: space-around;
@@ -74,14 +78,13 @@ button#download {
     font-weight: 400;
 
     border: none;
-    background-color: #00DF5E;
+    background-color: #00ffff;
     padding: 1rem 3rem 1rem 3rem; 
 }
 
 button#download:hover {
     cursor: pointer;
-    background-color:#1ee06f;  
-    border-color: white;
+    background-color:#389cac; 
     color: white;
 }
 
@@ -98,8 +101,7 @@ button#contato{
 
 button#contato:hover{
     cursor: pointer;
-    background-color:#1f1e1e; 
-    border-color: #00DF5E;
+    background-color: #35354c; 
 }
 
 div#main-banner {
@@ -110,7 +112,7 @@ div#main-banner {
 }
 
 img#main-img {
-    width: 20rem;
+    width: 24rem;
 }
 
 section#about-me{
