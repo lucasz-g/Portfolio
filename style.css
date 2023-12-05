@@ -68,7 +68,7 @@ h2.h2-intro{
     color: white;
 }
 
-p#description-text {
+p.normal-text {
     font-family: 'DM Sans', sans-serif;
     font-size: 18px;
     font-weight: 400;
@@ -128,6 +128,7 @@ section#about-me{
     flex-direction: column;
     align-items: center;
 
+    padding: 10rem 0rem 0rem 0rem;
     font-family: 'DM Sans', sans-serif;
 }
 
@@ -141,6 +142,8 @@ div#about-me-text{
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    padding: 0rem 0rem 4rem 0rem;
 }
 
 article#about {
@@ -151,4 +154,56 @@ article#about {
     font-weight: 400;
     color: #828282;
 
+}
+
+div#contact {
+    display: flex;
+    justify-content: space-around;
+    gap: 6rem;
+    padding: 3rem 0rem 0rem 0rem;
+}
+
+div.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 1rem;
+}
+
+div.info-icon {
+    display: flex;
+    justify-content: center;
+
+    background-color: #212121;
+    border-radius: 100px;
+    padding: 10px;
+}
+
+div.info-data{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h4.h4 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: white;
+}
+
+a.link-icon{
+    text-decoration: underline;
+    color: #828282;
+}
+
+svg.bi {
+    width: 32px;
+    height: 32px;
+
+    color: #00ffff;
+    background-color: #212121;
 }
