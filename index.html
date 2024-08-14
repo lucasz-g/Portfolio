@@ -8,17 +8,15 @@
 </head>
 <body>
 
-    <section>
-        <nav id="nav-bar">
-            <h1 class="h1 -h1-portfolio">Portfólio</h1>
-            <ul id="nav-list">
-                <li><a href="" class="link-nav">Sobre mim</a></li>
-                <li><a href="" class="link-nav">Projetos</a></li>
-                <li><a href="" class="link-nav">Serviços</a></li>
-                <li><a href="" class="link-nav">Minhas skills</a></li>
-            </ul>
-        </nav>
-    </section>
+    <nav id="nav-bar">
+        <h1 class="h1 -h1-portfolio">Portfólio</h1>
+        <ul id="nav-list">
+            <li><a href="#about-me" class="link-nav">Sobre mim</a></li>
+            <li><a href="#projects" class="link-nav">Projetos</a></li>
+            <li><a href="" class="link-nav">Serviços</a></li>
+            <li><a href="" class="link-nav">Minhas skills</a></li>
+        </ul>
+    </nav>
 
     <section id="main-text-button">
         
@@ -32,8 +30,8 @@
             <p class="normal-text">Desenvolvedor</p>
             
             <div id="buttons">
-                <button type="submit" id="download">Download CV</button>
-                <button type="submit" id="contato">Entrar em contato</button>
+                <button type="button" id="download">Download CV</button>
+                <button type="button" id="contato" onclick="location.href='#contact';">Entrar em contato</button>
             </div>
 
         </div>
@@ -47,8 +45,10 @@
         <h3 class="h3 h3-about">Sobre mim</h3>
         <div id="about-me-text">
             <article id="about">
-                Desenvolvedor e consultor Oracle, atualmente cursando engenharia de software. 
-                Apesar da minha pouca experiência, busco constantemente aprender e evoluir na área.
+                Sou estudante de Engenharia de Software na FIAP, atualmente no 3º semestre, com uma paixão por desenvolvimento de software. 
+                Estudo diariamente para aprimorar minhas habilidades em backend e frontend, o que me dá uma visão ampla na criação de soluções completas. Durante 10 meses, 
+                atuei como Consultor Técnico Oracle na Peloton Consulting Group, onde utilizei tecnologias como Oracle SQL, PL/SQL, integrações de sistemas e APIs para desenvolver soluções customizadas e otimizar processos complexos. 
+                Essa experiência fortaleceu minhas habilidades técnicas e minha capacidade de resolver desafios em ambientes de alta complexidade.
             </article>
         </div>
 
@@ -114,11 +114,50 @@
                 
             </div>
 
-           
- 
-
         </div>
 
+    </section>
+
+    <section id="projects">
+        <h3 class="h3">Projetos</h3>
+
+        <div id="projects-cards">
+            
+            <!-- Card 1 -->
+            <div class="card">
+                <div class="card-image">
+                    <img src="imgs/OHM.jpeg" alt="" srcset="" class="card-img">
+                </div>
+
+                <div class="card-info">
+                    <h4 class="h4 h4-card">Online Health Management</h4>
+                    <p class="normal-text card-text">Tecnologias utilizadas: HTML, CSS e JS.</p>
+                </div>
+            </div>
+            
+            <!-- Card 2 -->
+            <div class="card">
+                <div class="card-image">
+                    <img src="imgs/Rachi.png" alt="" srcset="" class="card-img">
+                </div>
+                <div class="card-info">
+                    <h4 class="h4 h4-card">Rachi</h4>
+                    <p class="normal-text card-text">Tecnologias utilizadas: HTML e CSS</p>
+                </div>
+            </div>
+            
+            <!-- Card 3 -->
+            <div class="card">
+                <div class="card-image">
+                    <img src="imgs/Candleaf.png" alt="" srcset="" class="card-img">
+                </div>
+                <div class="card-info">
+                    <h4 class="h4 h4-card">Candleaf</h4>
+                    <p class="normal-text card-text">Tecnologias utilizadas: HTML e CSS</p>
+                </div>
+            </div>
+
+        </div>
 
     </section>
 
