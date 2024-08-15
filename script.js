@@ -1,5 +1,4 @@
-// scripts.js
-
+//Navegação de sections
 document.addEventListener('DOMContentLoaded', function() {
     // Captura todos os links com a classe 'link-secao'
     document.querySelectorAll('.link-nav').forEach(link => {
@@ -18,4 +17,15 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
+});
+
+//Download Curriculo
+document.getElementById('download').addEventListener('click', function() {
+    const url = 'files/Curriculo.pdf';
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'Curriculo.pdf'; 
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
 });
