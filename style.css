@@ -49,8 +49,13 @@ ul#nav-list {
 
 .link-nav:hover{
     color: #828282;
-    ;
     transition: 0.2s;
+}
+
+
+a:visited {
+    color: white; /* Mesma cor do link não visitado */
+    text-decoration: none; /* Manter sem sublinhado */
 }
 
 section.section-main-text-button{
@@ -104,6 +109,7 @@ button#download {
 
     border: none;
     background-color: #00ffff;
+    color: #171717;
     padding: 1rem 3rem 1rem 3rem; 
 }
 
@@ -379,7 +385,17 @@ span.footer-span {
 
 @media only screen and (max-width: 768px) {
     /* Ajustes no tamanho da fonte */
+    @media (pointer: coarse) {
+        a:hover {
+            color: white;
+        }
+    }
     
+    a:visited {
+        color: white; /* Mesma cor do link não visitado */
+        text-decoration: none; /* Manter sem sublinhado */
+    }
+
     section.section{
         padding: 4rem 10rem;
     }
@@ -397,7 +413,7 @@ span.footer-span {
 
     ul#nav-list {
         display: flex;
-        padding: 3rem 0rem;
+        padding: 3rem 0rem 0rem 0rem;
         flex-direction: row;
         font-size: 14px;
         gap: 1rem;
@@ -422,33 +438,67 @@ span.footer-span {
 
     button#download {
         font-family: 'DM Sans', sans-serif;
-        font-size: 16px;
+        font-size: 12px;
         font-weight: 400;
         border: none;
         background-color: #00ffff;
         padding: 1rem;
         width: 10rem;
         height: fit-content;
+        cursor: pointer;
+        transition: background-color 0.3s, color 0.3s; /* Transição suave para mudanças de cor */
+    }
+
+    button#download:visited {
+        background-color: #00ffff;
+        color: #171717;
+    }
+    
+    /* Remover o efeito de hover em dispositivos móveis */
+    @media (pointer: coarse) {
+        button#download:hover {
+            background-color: #00ffff; /* Manter o estilo original no mobile */
+            color: #171717;
+        }
     }
 
     button#contato {
         color: white;
         font-family: 'DM Sans', sans-serif;
-        font-size: 15px;
+        font-size: 12px;
         font-weight: 400;
         background-color: #171717;
         border: 1px solid #333333;
         padding: 1rem;
         width: 10rem;
-    }    
+        transition: #35354c, 0.3s, color 0.3s;
+    }
+
+    button#contato:visited {
+        color: white;
+        background-color: #171717;
+        border: 1px solid #333333;
+    }
+
+    @media (pointer: coarse) {
+        button#contato:hover {
+            background-color: #171717; /* Manter o estilo original no mobile */
+            color: white;
+        }
+    }
 
     h2.h2-intro {
-        font-size: 28px;
+        font-size: 20px;
         text-align: center;
+    }
+
+    h3.h3 {
+        font-size: 20px;
     }
 
     p.job-text {
         padding: 1rem;
+        font-size: 14px;
     }
 
     p.normal-text {
@@ -468,6 +518,7 @@ span.footer-span {
 
     img#main-img {
         width: 100%;
+        padding: 2rem 2rem 1rem 2rem;
     }
 
     section.section-about-me {
