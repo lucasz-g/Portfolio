@@ -76,13 +76,20 @@ h2.h2-intro{
     color: white;
 }
 
+p.job-text{
+    font-family: 'DM Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color:#828282;
+    padding: 1rem 0rem 0.5rem 0rem;    
+}
+
 p.normal-text {
     font-family: 'DM Sans', sans-serif;
     font-size: 18px;
     font-weight: 400;
     color:#828282;
     padding: 1rem 0rem 0.5rem 0rem;
-
 }
 
 div#buttons{
@@ -372,6 +379,11 @@ span.footer-span {
 
 @media only screen and (max-width: 768px) {
     /* Ajustes no tamanho da fonte */
+    
+    section.section{
+        padding: 4rem 10rem;
+    }
+    
     h1.h1 {
         font-size: 22px;
         text-align: center;
@@ -385,11 +397,12 @@ span.footer-span {
 
     ul#nav-list {
         display: flex;
-        padding: 1rem;
+        padding: 3rem 0rem;
         flex-direction: row;
-        font-size: 16px;
+        font-size: 14px;
         gap: 1rem;
         text-align: center;
+        align-items: center;
     }
 
     section.section-main-text-button {
@@ -434,6 +447,10 @@ span.footer-span {
         text-align: center;
     }
 
+    p.job-text {
+        padding: 1rem;
+    }
+
     p.normal-text {
         font-size: 16px;
         text-align: center;
@@ -463,8 +480,23 @@ span.footer-span {
     }
 
     div#contact {
-        flex-direction: column;
+        display: flex;
+        flex-direction: flex;
+        flex-wrap: wrap;
         gap: 2rem;
+    }
+
+    div.contact-info {
+        width: 30%;
+        font-size: 12px;
+    }
+
+    p.normal-text {
+        padding: 0;
+    }
+
+    section.section-projects {
+        padding: 4rem 10rem;
     }
 
     div.cards {
@@ -483,12 +515,13 @@ span.footer-span {
     }
 
     section.section-services {
-        padding: 1rem 0rem 5rem 0rem;
+        padding: 4rem 0rem 5rem 0rem;
     }
 
     div.service-cards {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
+        flex-wrap: wrap;
         width: 50%;
     }
 
@@ -503,9 +536,25 @@ span.footer-span {
         text-align: center;
     }
 
+    section.section-skills {
+        padding: 4rem 2rem 4rem 2rem;
+    }
+
     div.skills-cards {
-        flex-direction: column;
-        align-items: center;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Duas colunas de largura igual */
+        grid-template-rows: repeat(2, auto);   /* Duas linhas automáticas */
+        gap: 1rem; /* Espaço entre as skill cards */
+        justify-items: center; /* Centralizar as cards dentro das colunas */
+        padding: 2rem;
+    }
+    
+    div.skill-card {
+        padding: 0.5rem;
+        width: 100%;
+        max-width: 150px; /* Reduzir o tamanho das skill cards */
+        background-color: #212121;
+        text-align: center;
     }
 
     footer {
