@@ -226,17 +226,19 @@ svg.bi {
 }
 
 section.section-projects {
-    padding: 8rem 5rem;
+    padding: 8rem;
     background-color: #171717;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 div.cards {
     display: flex;
     flex-flow: nowrap;
-    justify-content: space-around;
-    padding: 2rem;
+    padding: 2rem 0rem 0rem 0rem;
+    gap: 2rem;
 }
 
 div.card {
@@ -283,7 +285,7 @@ div.service-cards {
     display: flex;
     flex-flow: nowrap;
     width: fit-content;
-    gap: 2rem;
+    align-items: center;
 }
 
 div.card-service {
@@ -329,5 +331,39 @@ section.section {
 }
 
 section.section-skills {
+    padding: 8rem;
+    align-items: center;
+    justify-content: center;
+}
+
+div.skills-cards {
+    display: flex;
+    justify-content: center;
+}
+
+div.skill-card {
+    padding: 1rem;
+}
+
+footer {
+    background-color: #212121;
+    padding: 1rem;
+}
+
+p.footer-p {
+    color: white;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20.83px;
     text-align: center;
+}
+
+span.footer-span {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20.83px;
+    text-align: center;
+    color: #00ffff;
 }
