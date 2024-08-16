@@ -41,19 +41,19 @@ ul#nav-list {
     text-decoration: none;
 }
 
-.link-nav{
+a.link-nav{
     color: white;
     text-decoration: none;
     transition: 0.2s
 }
 
-.link-nav:hover{
+a.link-nav:hover{
     color: #828282;
     transition: 0.2s;
 }
 
 
-a:visited {
+a.link-nav:visited {
     color: white; /* Mesma cor do link não visitado */
     text-decoration: none; /* Manter sem sublinhado */
 }
@@ -385,15 +385,20 @@ span.footer-span {
 
 @media only screen and (max-width: 768px) {
     /* Ajustes no tamanho da fonte */
-    @media (pointer: coarse) {
-        a:hover {
-            color: white;
-        }
+    
+    a {
+
     }
     
     a:visited {
         color: white; /* Mesma cor do link não visitado */
         text-decoration: none; /* Manter sem sublinhado */
+    }
+
+    @media (pointer: coarse) {
+        a:hover {
+            color: white;
+        }
     }
 
     section.section{
