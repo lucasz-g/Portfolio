@@ -384,12 +384,6 @@ span.footer-span {
 }
 
 @media only screen and (max-width: 768px) {
-    /* Ajustes no tamanho da fonte */
-    
-    a {
-
-    }
-    
     a:visited {
         color: white; /* Mesma cor do link não visitado */
         text-decoration: none; /* Manter sem sublinhado */
