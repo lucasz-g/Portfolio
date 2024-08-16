@@ -413,7 +413,7 @@ span.footer-span {
 
     ul#nav-list {
         display: flex;
-        padding: 3rem 0rem 0rem 0rem;
+        padding: 2rem 0rem 0rem 0rem;
         flex-direction: row;
         font-size: 14px;
         gap: 1rem;
@@ -570,21 +570,32 @@ span.footer-span {
     }
 
     div.service-cards {
-        flex-direction: row;
-        align-items: center;
-        flex-wrap: wrap;
-        width: 50%;
+        display: flex;
+        flex-direction: row; /* Mantém os cards na horizontal */
+        align-items: center; 
+        justify-content: center;
+        width: 100%; /* Ajuste para ocupar a largura total */
+    }
+    
+    div.card-service {
+        width: 6rem;
+        height: 9rem; /* Diminui o tamanho dos cards para 45% da largura */
+        padding: 0.5rem; /* Diminui o padding */
+        text-align: center;
     }
 
-    div.card-service {
-        width: 100%;
-        padding: 2rem;
-        text-align: center;
+    div.card-info-service {
+        padding: 1rem 0rem;
     }
 
     h5.h5-card {
-        font-size: 24px;
+        font-size: 12px;
         text-align: center;
+        line-height: normal;
+    }
+
+    svg.service-icon{
+        width: 28px;
     }
 
     section.section-skills {
