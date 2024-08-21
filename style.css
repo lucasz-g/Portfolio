@@ -277,6 +277,20 @@ h4.h4-card {
     padding: 0rem 0rem 0.5rem 0rem;
 }
 
+a.project-link {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+a.project-link:hover {
+    color: #828282;
+}
+
+a:visited {
+    text-decoration: none;
+    color: white;
+}
+
 p.card-text {
     font-weight: 500;
     font-size: 14px;
