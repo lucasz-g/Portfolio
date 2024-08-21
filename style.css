@@ -393,24 +393,24 @@ span.footer-span {
 
 @media only screen and (max-width: 768px) {
     
-    a.link-nav {
+    a {
         color: white;
         text-decoration: none;
         transition: background-color 0.3s, color 0.3s;
     }
 
-    a.link-nav:active {
+    a:active {
         color: #333333;
         text-decoration: none;
     }
 
-    a.link-nav:visited {
+    a:visited {
         color: white; /* Mesma cor do link não visitado */
         text-decoration: none; /* Manter sem sublinhado */
     }
 
     @media (pointer: coarse) {
-        a.link-nav:hover {
+        a:hover {
             color: white;
         }
     }
