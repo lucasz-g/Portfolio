@@ -226,6 +226,11 @@ a.link-icon{
     color: #828282;
 }
 
+a.link-icon:visited{
+    text-decoration: underline;
+    color: #828282;
+}
+
 svg.bi {
     width: 32px;
     height: 32px;
@@ -286,7 +291,7 @@ a.project-link:hover {
     color: #828282;
 }
 
-a:visited {
+a.project-link:visited {
     text-decoration: none;
     color: white;
 }
@@ -393,24 +398,24 @@ span.footer-span {
 
 @media only screen and (max-width: 768px) {
     
-    a {
+    a.nav-link {
         color: white;
         text-decoration: none;
         transition: background-color 0.3s, color 0.3s;
     }
 
-    a:active {
+    a.nav-link:active {
         color: #333333;
         text-decoration: none;
     }
 
-    a:visited {
+    a.nav-link:visited {
         color: white; /* Mesma cor do link não visitado */
         text-decoration: none; /* Manter sem sublinhado */
     }
 
     @media (pointer: coarse) {
-        a:hover {
+        a.nav-link:hover {
             color: white;
         }
     }
